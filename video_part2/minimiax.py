@@ -83,7 +83,7 @@ def invoke_reference_to_video() -> str:
                 "url": "https://github.com/XenoAmess/20260807_video_gen_vivhite_fly/raw/refs/heads/master/raw_video/raw_part2.mov"},
              "role": "reference_video"},
         ],
-        "duration": 15,
+        "duration": 14,
         "resolution": "2K",
     }
     response = requests.post(url, headers=headers, json=payload)
