@@ -5,7 +5,7 @@ import requests
 api_key = os.environ["MINIMAX_API_KEY"]
 headers = {"Authorization": f"Bearer {api_key}"}
 BASE_URL = "https://api.minimaxi.com"
-MODEL = "MiniMax-H3"
+MODEL = "MiniMax-H2.3"
 
 
 # --- 步骤 1: 发起视频生成任务 ---
@@ -83,10 +83,11 @@ def invoke_reference_to_video() -> str:
                 "url": "https://github.com/XenoAmess/20260807_video_gen_vivhite_fly/raw/refs/heads/master/raw_video/raw_part1.mov"},
              "role": "reference_video"},
         ],
-        "duration": 15,
+        "duration": 28,
         "resolution": "2K",
     }
     response = requests.post(url, headers=headers, json=payload)
+    print(response.json())
     response.raise_for_status()
     return response.json()["task_id"]
 
@@ -117,7 +118,7 @@ def query_task_status(task_id: str) -> str:
 # 任务成功后直接得到成片下载地址，下载内容并保存到本地即可。
 def fetch_video(download_url: str):
     """下载成片并保存到本地。"""
-    with open("output.mp4", "wb") as f:
+    with open("output1.mp4", "wb") as f:
         video_response = requests.get(download_url)
         video_response.raise_for_status()
         f.write(video_response.content)

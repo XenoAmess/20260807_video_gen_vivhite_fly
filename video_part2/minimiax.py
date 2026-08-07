@@ -5,7 +5,7 @@ import requests
 api_key = os.environ["MINIMAX_API_KEY"]
 headers = {"Authorization": f"Bearer {api_key}"}
 BASE_URL = "https://api.minimaxi.com"
-MODEL = "MiniMax-H3"
+MODEL = "MiniMax-H2.3"
 
 
 # --- 步骤 1: 发起视频生成任务 ---
@@ -87,6 +87,7 @@ def invoke_reference_to_video() -> str:
         "resolution": "2K",
     }
     response = requests.post(url, headers=headers, json=payload)
+    print(response.json())
     response.raise_for_status()
     return response.json()["task_id"]
 
