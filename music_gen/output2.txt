@@ -1,0 +1,22 @@
+C:\Users\xenoa\AppData\Local\Programs\Python\Python313\Scripts\uv.exe run F:/workspace/20260807_video_gen_vivhite_fly/.venv/Scripts/python.exe F:\workspace\20260807_video_gen_vivhite_fly\music_gen\music_rewrite_minimax.py
+{
+  "data": {
+    "audio": "https://minimax-algeng-chat-tts.oss-cn-wulanchabu.aliyuncs.com/audio%2Feffect%2F06c5757f761a7a476eb1574425725eb6_1786135226702_547.mp3?Expires=1786221626&OSSAccessKeyId=LTAI5tGLnRTkBjLuYPjNcKQ8&Signature=fMq1HswzM1XQtsFS6aQADljr69s%3D",
+    "status": 2
+  },
+  "trace_id": "06c5757f761a7a476eb1574425725eb6",
+  "extra_info": {
+    "music_duration": 99213,
+    "music_sample_rate": 44100,
+    "music_channel": 2,
+    "bitrate": 256000,
+    "music_size": 3176793
+  },
+  "analysis_info": null,
+  "base_resp": {
+    "status_code": 0,
+    "status_msg": "success"
+  }
+}
+
+进程已结束，退出代码为 0

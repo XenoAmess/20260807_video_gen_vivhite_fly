@@ -12,7 +12,7 @@ headers = {
 
 payload = {
     "model": "music-cover",
-    "audio_url": "https://github.com/XenoAmess/20260807_video_gen_vivhite_fly/raw/refs/heads/master/raw_music/original.m4a"
+    "audio_url": "https://github.com/XenoAmess/20260807_video_gen_vivhite_fly/raw/refs/heads/master/raw_music/original.mp3"
 }
 
 response = requests.post(url, headers=headers, json=payload)

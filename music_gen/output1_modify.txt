@@ -1,0 +1,6 @@
+C:\Users\xenoa\AppData\Local\Programs\Python\Python313\Scripts\uv.exe run F:/workspace/20260807_video_gen_vivhite_fly/.venv/Scripts/python.exe F:\workspace\20260807_video_gen_vivhite_fly\music_gen\lyrics_extract.py
+特征 ID: c5f2c2c2cc527f12ea2aa9187f79472d
+提取的歌词:
+
+
+进程已结束，退出代码为 0
