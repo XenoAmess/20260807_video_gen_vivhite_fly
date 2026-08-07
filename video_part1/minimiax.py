@@ -77,13 +77,13 @@ def invoke_reference_to_video() -> str:
         "content": [
             {"type": "text", "text": "以视频1作为基础，保留动作，场景，神态等，只将视频中的人物替换为图1中的人物。 去除视频中底部的歌词字幕。"},
             {"type": "image_url", "image_url": {
-                "url": "https://12387.cert.org.cn/image_tent/sysresources/7be7321621f746c391ab7f24b3c0b259.png"},
+                "url": "https://github.com/XenoAmess/20260807_video_gen_vivhite_fly/raw/refs/heads/master/raw_picture/BV1N84y1L7mh.png"},
              "role": "reference_image"},
             {"type": "video_url", "video_url": {
-                "url": "https://cdn.hailuoai.com/prod/hailuo_demo/testsets/h3_promo_eval_ref2va/gallery/sr_v2p26_trio_seed42_20260724/inputs/d9060f5cb9ab_02_%E8%A7%86%E9%A2%911_HDvmbpQrEo_%E8%A1%97%E8%88%9E3.mp4"},
+                "url": "https://github.com/XenoAmess/20260807_video_gen_vivhite_fly/raw/refs/heads/master/raw_video/raw_part1.mov"},
              "role": "reference_video"},
         ],
-        "duration": 27,
+        "duration": 15,
         "resolution": "2K",
     }
     response = requests.post(url, headers=headers, json=payload)
